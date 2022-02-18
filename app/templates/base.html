@@ -1,0 +1,27 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Air Partners Madlibs</title>
+        {% else %}
+        <title>Air Partners Madlibs</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            Madlibs:
+            <a href="/index">Home</a>
+            <a href="/entry1">Search</a>
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
