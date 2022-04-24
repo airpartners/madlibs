@@ -20,5 +20,5 @@ In app/data.py, line 29, you will have to give the path to your data file.
 
 To run the flask app:
 ```
-Flask run
+flask run
 ```
