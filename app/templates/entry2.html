@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Search</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.entry2.label }}<br>
+            {{ form.entry2(size=32) }}
+        </p>
+        <p>
+            {{ form.pollutant.label }}<br>
+            {{ form.pollutant(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
