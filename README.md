@@ -11,7 +11,7 @@ For Windows:
 venv\Scripts\activate
 ```
 
-For Linuz:
+For Linux:
 ```
 source venv/bin/activate
 ```
